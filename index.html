@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>页面置换算法</title>
+	<link rel="stylesheet" href="css/page-replace.css">
+</head>
+<body>
+	<header class="header">
+		<h1>页面置换算法</h1>
+	</header>
+	<section>
+		<div class="float_left">
+		<div id="manages" class="manages">
+			<div class="manage cpu blue">
+				<p class="title">内存状态</p>
+				<p class="content">0%</p>
+			</div>
+			<div class="manage lose blue">
+				<p class="title">缺页率</p>
+				<p class="content">0</p>
+			</div>
+			<div class="manage stack blue">
+				<p class="title">页面剩余</p>
+				<p class="content">0</p>
+			</div>
+			<div class="manage method blue">
+				<p class="title">算法</p>
+				<p class="content">FIFO</p>
+			</div>
+		</div>
+		<div class="memorys container">
+			<div class="memory head">
+				<div class="title">虚拟存储器</div>
+			</div>
+			<div class="memory boxs" id="boxs">
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+				<div class="box">空闲</div>
+			</div>
+		</div>	
+		</div>
+		<div class="float_right">
+		<div class="controls">
+			<div class="control">
+				<p class="title">控制台</p>
+				<div class="buttons">
+					<a onclick="run()" class="button">运行</a>
+					<a onclick="clearAll()" class="button">重置</a>
+					<a onclick="stopAll()" class="button">停止</a>
+				</div>
+			</div>
+			<div class="control">
+				<p class="title">调度算法</p>
+				<div class="buttons">
+					<a onclick="setMethod(this)" class="button">FIFO</a>
+					<a onclick="setMethod(this)" class="button">LRU</a>
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<div class="control">
+				<p class="title">页块数</p>
+				<div class="buttons">
+					<input id="memoryNumber" type="text">
+					<a onclick="initMemoryNumber()" class="button">创建</a>
+				</div>
+			</div>
+			<div class="control">
+				<p class="title">创建页面</p>
+				<div class="buttons">
+					<input id="stack" type="text">
+					<a onclick="initStack()" class="button">创建</a>
+					<a onclick="random()" class="button">随机创建</a>
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<div class="control">
+				<p class="title">页面</p>
+				<div class="buttons" id="stackWait">
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<div class="control">
+				<p class="title">完成页面</p>
+				<div class="buttons" id="stackFinish">
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/page-replace.js"></script>
+</body>
+</html>

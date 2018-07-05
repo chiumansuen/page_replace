@@ -1,0 +1,225 @@
+/* 初始化 */
+html, body {
+    font-family: Courier, monospace;
+
+    /*width: 500px;*/
+    background: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 头部 */
+.header {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #506479;
+    margin-bottom: 20px;
+}
+
+.header a {
+    background: #232323;
+    color: #f9f6f2;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+.header input {
+    padding: 10px;
+    outline: none;
+    width: 68%;
+}
+
+/* 内存 */
+.memorys {
+    background: #1E88E5;
+    height: 300px;
+    min-width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.memory.head {
+    height: 40px;
+}
+
+.memory.head .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+/* 页面 */
+.memory.boxs {
+    text-align: center;
+    height: 180px;
+}
+
+.memory.boxs .box {
+    padding: 0;
+    color: #fff;
+    border-radius: 5px;
+    width: 10%;
+    height: 180px;
+    background: #383838;
+    line-height: 180px;
+    text-align: center;
+    margin: 0 4px;
+    display: inline-block;
+}
+
+
+
+/* 控制台 */
+.controls {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    min-height: 90px;
+    background: #1E88E5;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.control input {
+    margin-top: -3px;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    height: 40px;
+}
+
+.control {
+    display: inline-block;
+}
+
+.controls .title {
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.controls .buttons {
+    padding: 0 2px;
+}
+
+.controls .button {
+    min-width: 50px;
+    background: #FFAB40;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls .button:hover{
+    background-color: #FFA128;
+}
+
+.controls .button.blue,
+#boxs .box.blue {
+    background: #00a4d8;
+}
+
+.controls .button.red,
+#boxs .box.red {
+    background: #f55551;
+}
+
+.controls .button.green,
+#boxs .box.green {
+    background: #32c146;
+}
+
+.controls .button.yellow,
+#boxs .box.yellow {
+    background: #FFAB40;
+}
+
+/* 管理状态 */
+.manages {
+    height: 130px;
+    color: #fff;
+    text-align: center;
+}
+
+.manages .manage {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background: #f55551;
+    border-radius: 10px;
+    display: inline-block;
+    /*display: none;*/
+}
+.float_left{
+    position: absolute;
+    top:140px;
+    left: 90px;
+}
+.float_right{
+    position: absolute;
+    right: 90px;
+    top: 140px;
+}
+
+.manages .manage .title {
+    text-align: center;
+    line-height: 40px;
+}
+
+.manages .manage .content {
+    text-align: center;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.manages .blue {
+    background: #00a4d8;
+}
+
+.manages .red {
+    background: #f55551;
+}
+
+.manages .green {
+    background: #32c146;
+}
+
+.manages .yellow {
+    background: #f6b73e;;
+}
+
+#stackWait{
+    width: 490px;
+    /*height: 50px;*/
+}
+
+#stackWait span{
+    display: block !important;
+    float: left !important;
+    line-height: 36px !important;
+    margin-bottom: 10px !important;
+}
